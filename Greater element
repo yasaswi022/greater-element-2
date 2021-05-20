@@ -1,0 +1,25 @@
+
+#include<stdio.h>
+Void printNGE(int arr[], int n)
+{
+    Int next, I, j;
+    For (i=0; i<n; i++)
+    {
+        Next = -1;
+        For (j = i+1; j<n; j++)
+        {
+            If (arr[i] < arr[j])
+            {
+                Next = arr[j];
+                Break;
+            }
+}
+        Printf(“%d -- %dn”, arr[i], next);
+    }
+}
+Int main(){
+    Int arr[]= {15, 23, 11, 5};
+    Int n = sizeof(arr)/sizeof(arr[0]);
+    printNGE(arr, n);
+    return 0;
+}
